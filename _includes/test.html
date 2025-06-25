@@ -1,0 +1,40 @@
+<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwvCGhcFMGt0yygSUMZ03M1tmMorEMxdtoqX0qJHBWVPpES-a0h3Th2GvlmsbYO2fpnVw/exec">
+  <div class="mb-4">
+    <label for="InputName" class="form-label">성함</label>
+    <input type="text" class="form-control" id="InputName" name="성함">
+  </div>
+  <div class="mb-4">
+    <label for="InputPhone" class="form-label">휴대전화번호 (내원시 등록하신 번호로만 본인확인이 가능합니다)</label>
+    <input type="tel" class="form-control" id="InputPhone" name="휴대전화번호">
+  </div>
+  
+  <div class="mb-4">
+    발급 원하시는 서류
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="yes" id="CheckReciept" name="영수증">
+      <label class="form-check-label" for="CheckReciept">영수증</label>
+    </div>  
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="yes" id="CheckDetailed" name="세부내역서">
+      <label class="form-check-label" for="CheckDetailed">세부내역서</label>
+    </div>  
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="yes" id="CheckMedicalCertificate" name="진료확인서">
+      <label class="form-check-label" for="CheckMedicalCertificate">진료확인서</label>
+    </div>  
+  </div>
+
+  <div class="mb-4">
+    <label for="InputMessage" class="form-label">기타 문의사항</label>
+    <input type="text" class="form-control" id="InputMessage" name="기타 문의사항">
+  </div>
+  <button type="submit" class="btn btn-primary">요청하기</button>
+  
+  <div style="display:none" class="thankyou_message">
+    <br>
+    <p>요청이 완료되었습니다. 약 10분 정도 이내로 본인확인을 위한 전화를 드릴 예정이니 받아주세요.</p></div>
+</form>
+
+<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>

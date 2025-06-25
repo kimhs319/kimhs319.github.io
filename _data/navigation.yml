@@ -11,20 +11,19 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
-    - title: "Services"
-      section: services
-    - title: "Portfolio"
-      section: portfolio
-    - title: "About"
-      section: about
-    - title: "Timeline"
+    - title: "한의원 소개"
       section: timeline
-    - title: "Team"
+    - title: "진료과목"
+      section: services
+    - title: "둘러보기"
+      section: portfolio
+    - title: "오시는 길"
+      section: about
+    
+    - title: "의료진 소개"
       section: team
-    - title: "Contact"
+    - title: "증명서 발급"
       section: contact
-    - title: "Theme Source"
-      url: https://github.com/raviriley/agency-jekyll-theme/
 
 en-001: #English (World)
   <<: *DEFAULT_EN
